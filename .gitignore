@@ -1,0 +1,19 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# macOS metadata files
+.Spotlight-V100
+.Trashes
+.metadata_never_index
+.fseventsd
+
+# Windows system and metadata files
+Desktop.ini
+Thumbs.db
+
+# Editor config files
+.idea/
+.vscode/
