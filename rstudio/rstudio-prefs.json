@@ -1,0 +1,50 @@
+{
+  "disable_renderer_accessibility": true,
+  "save_workspace": "never",
+  "load_workspace": false,
+  "initial_working_directory": "~",
+  "always_save_history": false,
+  "posix_terminal_shell": "zsh",
+  "scroll_past_end_of_document": true,
+  "rainbow_parentheses": true,
+  "line_ending_conversion": "posix",
+  "fold_style": "begin-only",
+  "editor_theme": "One Dark Pro",
+  "panes": {
+      "quadrants": [
+          "Source",
+          "Console",
+          "TabSet1",
+          "TabSet2"
+      ],
+      "tabSet1": [
+          "Environment",
+          "VCS",
+          "Presentation"
+      ],
+      "tabSet2": [
+          "Files",
+          "Plots",
+          "Packages",
+          "Help",
+          "Viewer",
+          "Presentations"
+      ],
+      "hiddenTabSet": [
+          "History",
+          "Connections",
+          "Build",
+          "Tutorial"
+      ],
+      "console_left_on_top": false,
+      "console_right_on_top": true,
+      "additional_source_columns": 0
+  },
+  "spelling_dictionary_language": "en_GB",
+  "terminal_bell_style": "none",
+  "jobs_tab_visibility": "shown",
+  "restore_source_documents": false,
+  "restore_last_project": false,
+  "default_project_location": "~/Research Projects",
+  "new_proj_use_renv": true
+}
