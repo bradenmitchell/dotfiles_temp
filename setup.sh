@@ -11,7 +11,7 @@ if ! xcode-select -p &>/dev/null; then
   xcode-select --install &>/dev/null
 
   # Wait for installation to complete
-  while pgrep -x "softwareupdate" > /dev/null; do
+  while pgrep -x "softwareupdate" > /dev/null || xcode-select -p &>/dev/null; do
     sleep 15
   done
   echo "Xcode Command Line Tools installed successfully"
