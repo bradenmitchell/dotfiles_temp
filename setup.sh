@@ -8,11 +8,12 @@ DOTFILES_GIT_REMOTE="https://github.com/bradenmitchell/dotfiles.git"
 echo "Checking if Xcode Command Line Tools are installed..."
 if ! xcode-select -p &>/dev/null; then
   echo "Xcode Command Line Tools not found. Please install Xcode Command Line Tools manually and rerun this script"
-  echo "xcode-select --install &>/dev/null"
   exit 1
 else
   echo "Xcode Command Line Tools available"
 fi
+
+exit 0
 
 # Check if dotfiles repository exists
 echo "Checking for dotfiles repository"
@@ -23,8 +24,6 @@ fi
 
 # Change to dotfiles directory
 cd $DOTFILES_DIR
-
-exit 0
 
 # Check if homebrew installed
 echo "Checking for homebrew"
