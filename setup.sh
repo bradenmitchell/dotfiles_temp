@@ -7,13 +7,17 @@ DOTFILES_GIT_REMOTE="https://github.com/bradenmitchell/dotfiles.git"
 # Check if Xcode Command Line Tools installed
 echo "Checking if Xcode Command Line Tools are installed..."
 if ! xcode-select -p &>/dev/null; then
-  echo "Xcode Command Line Tools not found. Please install Xcode Command Line Tools manually and rerun this script"
-  exit 1
+  echo "Installing Xcode Command Line Tools"
+  xcode-select --install &>/dev/null
+
+  # Wait for installation to complete
+  while pgrep -x "softwareupdate" > /dev/null || xcode-select -p &>/dev/null; do
+    sleep 15
+  done
+  echo "Xcode Command Line Tools installed successfully"
 else
   echo "Xcode Command Line Tools available"
 fi
-
-exit 0
 
 # Check if dotfiles repository exists
 echo "Checking for dotfiles repository"
