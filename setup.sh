@@ -27,9 +27,9 @@ cd $DOTFILES_DIR
 # Check if homebrew installed
 echo "Checking for homebrew..."
 if ! command -v brew &>/dev/null; then
-  # Install homebrew using non-interactive install
+  # Install homebrew
   echo "Installing homebrew..."
-  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   # Add homebrew to PATH for this session
   echo "Configuring PATH for current session..."
